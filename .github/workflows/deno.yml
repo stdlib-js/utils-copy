@@ -70,7 +70,11 @@ jobs:
       - name: Prepare tag
         id: prepare_tag
         run: |
-          TAG_NAME=$(git describe --tags --always --abbrev=0)
+          # Get repo name:
+          repo_name=$(git config --get remote.origin.url | sed -E 's/^.*\/([^\/]+)\.git$/\1/')
+
+          # Get latest version from npm:
+          TAG_NAME=v$(npm view $repo_name version)
           echo "::set-output name=tag_name::${TAG_NAME}"
           echo "::set-output name=publish_tag_name::deno-${TAG_NAME}"
       - name: Publish to deno branch
