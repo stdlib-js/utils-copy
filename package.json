@@ -53,6 +53,7 @@
     "@stdlib/assert-is-nonnegative-integer": "^0.0.x",
     "@stdlib/buffer-from-buffer": "^0.0.x",
     "@stdlib/constants-float64-pinf": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-define-property": "^0.0.x",
     "@stdlib/utils-get-prototype-of": "^0.0.x",
     "@stdlib/utils-index-of": "^0.0.x",
