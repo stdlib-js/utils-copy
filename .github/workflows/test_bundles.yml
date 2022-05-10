@@ -74,13 +74,13 @@ jobs:
         if: failure()
 
       # Create Markdown summary:
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of UMD bundle failed. :x:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of UMD bundle failed. :x:' >> $GITHUB_STEP_SUMMARY
         if: failure()
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of UMD bundle succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of UMD bundle succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
         unless: failure()
 
   # Define job to test ES modules...
@@ -126,13 +126,13 @@ jobs:
         if: failure()
 
       # Create Markdown summary:
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of ES module failed. :x:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of ES module failed. :x:' >> $GITHUB_STEP_SUMMARY
         if: failure()
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of ES module succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of ES module succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
         unless: failure()
 
   # Define job to test Deno bundles...
@@ -178,11 +178,11 @@ jobs:
         if: failure()
 
       # Create Markdown summary:
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of Deno build failed. :x:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of Deno build failed. :x:' >> $GITHUB_STEP_SUMMARY
         if: failure()
-      - name: 'Bundle Summary'
+      - name: 'Bundle Test Summary'
         run: |
-          echo 'Creation of Deno build succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+          echo 'Loading of Deno build succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
         unless: failure()
