@@ -73,6 +73,16 @@ jobs:
           channel: '#npm-ci'
         if: failure()
 
+      # Create Markdown summary:
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of UMD bundle failed. :x:' >> $GITHUB_STEP_SUMMARY
+        if: failure()
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of UMD bundle succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+        unless: failure()
+
   # Define job to test ES modules...
   test-esm:
 
@@ -115,6 +125,16 @@ jobs:
           channel: '#npm-ci'
         if: failure()
 
+      # Create Markdown summary:
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of ES module failed. :x:' >> $GITHUB_STEP_SUMMARY
+        if: failure()
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of ES module succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+        unless: failure()
+
   # Define job to test Deno bundles...
   test-deno:
 
@@ -156,3 +176,13 @@ jobs:
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+      # Create Markdown summary:
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of Deno build failed. :x:' >> $GITHUB_STEP_SUMMARY
+        if: failure()
+      - name: 'Bundle Summary'
+        run: |
+          echo 'Creation of Deno build succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
+        unless: failure()
