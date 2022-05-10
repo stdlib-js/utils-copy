@@ -90,6 +90,21 @@ jobs:
           coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
           echo "::set-output name=coverage::$coverage"
 
+      # Convert coverage report to Markdown:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-
+            --standalone
+            --output=report.md
+            reports/coverage/lcov-report/index.html
+
+      # Print coverage report to GitHub Actions log:
+      - name: 'Print coverage report to GitHub Actions log'
+        run: |
+          echo "## Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat report.md >> $GITHUB_STEP_SUMMARY
+
       # Send Slack notification if job fails:
       - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
