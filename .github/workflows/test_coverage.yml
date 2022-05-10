@@ -94,7 +94,6 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-            --standalone
             --output=report.md
             reports/coverage/lcov-report/index.html
 
