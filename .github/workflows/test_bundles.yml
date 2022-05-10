@@ -81,7 +81,7 @@ jobs:
       - name: 'Bundle Test Summary'
         run: |
           echo 'Loading of UMD bundle succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
-        unless: failure()
+        if: success()
 
   # Define job to test ES modules...
   test-esm:
@@ -133,7 +133,7 @@ jobs:
       - name: 'Bundle Test Summary'
         run: |
           echo 'Loading of ES module succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
-        unless: failure()
+        if: success()
 
   # Define job to test Deno bundles...
   test-deno:
@@ -185,4 +185,4 @@ jobs:
       - name: 'Bundle Test Summary'
         run: |
           echo 'Loading of Deno build succeeded. :tada:' >> $GITHUB_STEP_SUMMARY
-        unless: failure()
+        if: success()
