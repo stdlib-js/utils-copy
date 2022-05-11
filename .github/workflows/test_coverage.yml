@@ -91,7 +91,7 @@ jobs:
           echo "::set-output name=coverage::$coverage"
 
           # Format coverage as Markdown table row:
-          table=$coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'
+          table=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'`
           echo "::set-output name=table::$table"
 
       # Print coverage report to GitHub Actions log:
