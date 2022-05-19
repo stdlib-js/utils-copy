@@ -78,14 +78,9 @@ jobs:
       # Print summary of download data:
       - name: 'Print summary'
         run: |
-          echo "# npm downloads"
-          echo "Data retrieved for package __${{ steps.package_name.outputs.package_name }}__ for time range $(date --date='1 year ago' '+%Y-%m-%d') to $(date '+%Y-%m-%d')." >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## Download counts (Last 14 Days)" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Date | Downloads |" >> $GITHUB_STEP_SUMMARY
-          echo "| ---- | --------- |" >> $GITHUB_STEP_SUMMARY
-          cat  ./tmp/npm_downloads.json | jq -r ".downloads | .[-14:] | to_entries | map(\"| \(.value.day) | \(.value.downloads) |\")  | .[]" >> $GITHUB_STEP_SUMMARY
+          echo "| Date | Downloads  |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------------|" >> $GITHUB_STEP_SUMMARY
+          cat ./tmp/npm_downloads.json | jq -r ".downloads | .[-14:] | to_entries | map(\"| \(.value.day) | \(.value.downloads) |\")  |.[]" >> $GITHUB_STEP_SUMMARY
 
       # Upload the download data:
       - name: 'Upload data'
