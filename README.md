@@ -24,38 +24,30 @@ limitations under the License.
 
 > Copy or deep clone a value to an arbitrary depth.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-copy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-copy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var copy = require( 'path/to/vendor/umd/utils-copy/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.copy;
-})();
-</script>
+var copy = require( '@stdlib/utils-copy' );
 ```
 
 #### copy( value\[, level] )
@@ -225,15 +217,10 @@ bool = ( value[0].c === out[0].c );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var Int32Array = require( '@stdlib/array-int32' );
+var copy = require( '@stdlib/utils-copy' );
 
 var arr = [
     {
@@ -267,11 +254,6 @@ bool = ( arr[ 0 ] === out[ 0 ] );
 
 bool = ( arr[ 1 ].z === out[ 1 ].z );
 // returns true
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -381,7 +363,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/merge]: https://github.com/stdlib-js/utils-merge/tree/umd
+[@stdlib/utils/merge]: https://github.com/stdlib-js/utils-merge
 
 <!-- </related-links> -->
 
