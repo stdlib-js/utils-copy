@@ -24,14 +24,30 @@ limitations under the License.
 
 > Copy or deep clone a value to an arbitrary depth.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-copy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@deno/mod.js';
+var copy = require( '@stdlib/utils-copy' );
 ```
 
 #### copy( value\[, level] )
@@ -202,9 +218,9 @@ bool = ( value[0].c === out[0].c );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var Int32Array = require( '@stdlib/array-int32' );
+var copy = require( '@stdlib/utils-copy' );
 
 var arr = [
     {
@@ -267,7 +283,7 @@ bool = ( arr[ 1 ].z === out[ 1 ].z );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -284,7 +300,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -347,7 +363,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/merge]: https://github.com/stdlib-js/utils-merge/tree/deno
+[@stdlib/utils/merge]: https://github.com/stdlib-js/utils-merge
 
 <!-- </related-links> -->
 
