@@ -268,7 +268,7 @@ bool = ( arr[ 1 ].z === out[ 1 ].z );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/merge`][@stdlib/utils/merge]</span><span class="delimiter">: </span><span class="description">merge and extend objects.</span>
+-   <span class="package-name">[`@stdlib/utils-merge`][@stdlib/utils/merge]</span><span class="delimiter">: </span><span class="description">merge and extend objects.</span>
 
 </section>
 
