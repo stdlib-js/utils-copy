@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-copy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js' )
+copy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.1.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var copy = require( 'path/to/vendor/umd/utils-copy/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.1.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -242,7 +242,7 @@ bool = ( value[0].c === out[0].c );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.1.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
