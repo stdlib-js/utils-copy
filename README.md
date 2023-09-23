@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@deno/mod.js';
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.1.0-deno/mod.js';
 ```
 
 #### copy( value\[, level] )
@@ -215,7 +215,7 @@ bool = ( value[0].c === out[0].c );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@deno/mod.js';
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.1.0-deno/mod.js';
 
 var arr = [
     {
