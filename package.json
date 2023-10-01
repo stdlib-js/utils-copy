@@ -78,7 +78,7 @@
     "@stdlib/constants-float64-pi": "^0.1.0",
     "@stdlib/number-ctor": "^0.1.0",
     "@stdlib/process-env": "^0.1.0",
-    "@stdlib/random-base-randu": "^0.0.8",
+    "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/utils-noop": "^0.1.0",
     "chai": "^3.5.0",
     "semver": "^6.0.0",
