@@ -24,7 +24,7 @@ var tape = require( 'tape' );
 var assert = require( 'chai' ).assert;
 var PI = require( '@stdlib/constants-float64-pi' );
 var copy = require( './../../dist' );
-var fixtures = require( './../..xtures' );
+var fixtures = require( './../fixtures' );
 
 
 // TESTS //
