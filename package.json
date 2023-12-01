@@ -64,14 +64,14 @@
     "@stdlib/utils-property-descriptor": "^0.1.1",
     "@stdlib/utils-property-names": "^0.1.0",
     "@stdlib/utils-regexp-from-string": "^0.1.1",
-    "@stdlib/utils-type-of": "^0.1.1"
+    "@stdlib/utils-type-of": "^0.1.2"
   },
   "devDependencies": {
     "@stdlib/assert-has-class-support": "^0.1.1",
     "@stdlib/assert-has-map-support": "^0.1.1",
     "@stdlib/assert-has-set-support": "^0.1.1",
     "@stdlib/assert-is-node": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/boolean-ctor": "^0.1.1",
     "@stdlib/buffer-ctor": "^0.1.1",
     "@stdlib/buffer-from-array": "^0.1.0",
