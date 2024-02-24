@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-copy/tags). For example,
+
+```javascript
 import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.2.1-esm/index.mjs';
 ```
 
@@ -220,7 +225,7 @@ bool = ( value[0].c === out[0].c );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.2.1-esm/index.mjs';
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@esm/index.mjs';
 
 var arr = [
     {
