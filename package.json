@@ -57,14 +57,15 @@
     "@stdlib/buffer-from-buffer": "^0.2.1",
     "@stdlib/constants-float64-pinf": "^0.2.1",
     "@stdlib/string-format": "^0.2.1",
-    "@stdlib/utils-define-property": "^0.2.1",
+    "@stdlib/utils-define-property": "^0.2.3",
     "@stdlib/utils-get-prototype-of": "^0.2.1",
     "@stdlib/utils-index-of": "^0.2.1",
     "@stdlib/utils-keys": "^0.2.1",
     "@stdlib/utils-property-descriptor": "^0.2.1",
     "@stdlib/utils-property-names": "^0.2.1",
     "@stdlib/utils-regexp-from-string": "^0.2.1",
-    "@stdlib/utils-type-of": "^0.2.1"
+    "@stdlib/utils-type-of": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-has-class-support": "^0.2.1",
@@ -77,14 +78,14 @@
     "@stdlib/constants-float64-pi": "^0.2.1",
     "@stdlib/number-ctor": "^0.2.1",
     "@stdlib/process-env": "^0.2.1",
-    "@stdlib/random-base-randu": "^0.2.0",
+    "@stdlib/random-base-randu": "^0.2.1",
     "@stdlib/utils-noop": "^0.2.1",
     "chai": "^3.5.0",
     "semver": "^6.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.0"
+    "@stdlib/bench-harness": "^0.2.1"
   },
   "engines": {
     "node": ">=0.10.0",
