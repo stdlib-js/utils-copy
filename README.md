@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@esm/index.mjs';
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.2.2-esm/index.mjs';
 ```
 
 #### copy( value\[, level] )
@@ -220,7 +220,7 @@ bool = ( value[0].c === out[0].c );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
-import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@esm/index.mjs';
+import copy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-copy@v0.2.2-esm/index.mjs';
 
 var arr = [
     {
