@@ -65,7 +65,7 @@ var copy = require( '@stdlib/utils-copy' );
 
 #### copy( value\[, level] )
 
-Copy or deep clone an input `value` to an arbitrary depth. The function accepts both `objects` and `primitives`.
+Copies or deep clones an input `value` to an arbitrary depth. The function accepts both `objects` and `primitives`.
 
 ```javascript
 // Primitives...
