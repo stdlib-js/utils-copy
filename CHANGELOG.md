@@ -2,6 +2,52 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-23)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#11082](https://github.com/stdlib-js/stdlib/issues/11082)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`e5b8da9`](https://github.com/stdlib-js/stdlib/commit/e5b8da9902dce751fc23b913afd2a153a5a57c92) - **chore:** resolve JavaScript lint errors in `utils/copy` [(#11083)](https://github.com/stdlib-js/stdlib/pull/11083) _(by Agentic-Worker)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Agentic-Worker
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
